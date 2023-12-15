@@ -22,7 +22,7 @@ var counterElement = document.getElementById("counter");
     
     
     function startCounter() {
-    
+      let but = document.getElementById('but-start').setAttribute("disabled", "")
       let cards = document.getElementById('conta').style.display="inline";
       counterElement.textContent = counter;
       timeoutId = setTimeout(function() {
@@ -33,6 +33,7 @@ var counterElement = document.getElementById("counter");
         }else
         {
             counterElement.textContent = 'finish'
+            let but = document.getElementById('but-start').removeAttribute('disabled')
             let cards = document.getElementById('conta').style.display="none";
             counter = 5
         }
