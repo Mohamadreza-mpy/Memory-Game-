@@ -63,7 +63,11 @@ var counterElement = document.getElementById("counter");
         }
       }else
       {
-        score--
+        
+        if(score > 0)
+        {
+          score--
+        }
         let elScore = document.getElementById('score').innerHTML = score
         alert('is false')
         // un Checked
