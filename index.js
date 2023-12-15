@@ -56,7 +56,7 @@ var counterElement = document.getElementById("counter");
         score++
         let elScore = document.getElementById('score').innerHTML = score
         
-        alert('is true')
+        swal("Good job!", "OK", "success");
         
         radios = document.querySelectorAll('#radio')
         for (const radio of radios) {
@@ -70,7 +70,7 @@ var counterElement = document.getElementById("counter");
           score--
         }
         let elScore = document.getElementById('score').innerHTML = score
-        alert('is false')
+        swal("Try again :(", "OK", "error");
         // un Checked
         
         radios = document.querySelectorAll('#radio')
